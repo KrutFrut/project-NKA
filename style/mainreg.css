@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+ 
+body {
+    background-color: #f0f2f5;
+}
+
+.login {
+    background: url("../img/BGRO.jpg") no-repeat bottom left / cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__wrap {
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login__logo-text {
+    font-size: 36px;
+    font-weight: 900;
+    color: #2400c2;
+    margin-bottom: 24px;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #323232;
+    margin-bottom: 20px;
+}
+
+.login__texts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.login__text {
+    color: #5A6175;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.login__link {
+    color: #2400c2;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.login__forgot-link {
+    font-size: 14px;
+    color: #2400c2;
+    margin-bottom: 24px;
+    text-decoration: none;
+    align-self: flex-end;
+}
+
+.login__input {
+    color: #19191A;
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: 1px solid #DAD7D5;
+    margin-bottom: 16px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.login__input:focus {
+    outline: none;
+    border-color: #2400c2;
+}
+
+.login__btn {
+    background: linear-gradient(90deg, #2400c2, #8700ff);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 14px;
+    border-radius: 24px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.login__btn:hover {
+    background: linear-gradient(90deg, #8700ff, #2400c2);
+}
+
+@media (max-width: 768px) {
+    .login__wrap {
+        padding: 24px;
+        width: 90%;
+    }
+
+    .login__logo-text {
+        font-size: 28px;
+    }
+
+    .login__title {
+        font-size: 24px;
+    }
+
+    .login__btn {
+        padding: 12px;
+    }
+}
